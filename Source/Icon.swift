@@ -645,643 +645,641 @@ public enum Icon: String {
 
     /// Unicode string.
     var unicode: String {
-        let value: UInt32
         switch self {
-        case .faGlass: value = 0xF000
-        case .faMusic: value = 0xF001
-        case .faSearch: value = 0xF002
-        case .faEnvelopeOutlined: value = 0xF003
-        case .faHeart: value = 0xF004
-        case .faStar: value = 0xF005
-        case .faStarOutlined: value = 0xF006
-        case .faUser: value = 0xF007
-        case .faFilm: value = 0xF008
-        case .faThLarge: value = 0xF009
-        case .faTh: value = 0xF00A
-        case .faThList: value = 0xF00B
-        case .faCheck: value = 0xF00C
-        case .faTimes: value = 0xF00D
-        case .faSearchPlus: value = 0xF00E
-        case .faSearchMinus: value = 0xF010
-        case .faPowerOff: value = 0xF011
-        case .faSignal: value = 0xF012
-        case .faCog: value = 0xF013
-        case .faTrashOutlined: value = 0xF014
-        case .faHome: value = 0xF015
-        case .faFileOutlined: value = 0xF016
-        case .faClockOutlined: value = 0xF017
-        case .faRoad: value = 0xF018
-        case .faDownload: value = 0xF019
-        case .faArrowCircleOutlinedDown: value = 0xF01A
-        case .faArrowCircleOutlinedUp: value = 0xF01B
-        case .faInbox: value = 0xF01C
-        case .faPlayCircleOutlined: value = 0xF01D
-        case .faRepeat: value = 0xF01E
-        case .faRefresh: value = 0xF021
-        case .faListAlt: value = 0xF022
-        case .faLock: value = 0xF023
-        case .faFlag: value = 0xF024
-        case .faHeadphones: value = 0xF025
-        case .faVolumeOff: value = 0xF026
-        case .faVolumeDown: value = 0xF027
-        case .faVolumeUp: value = 0xF028
-        case .faQrcode: value = 0xF029
-        case .faBarcode: value = 0xF02A
-        case .faTag: value = 0xF02B
-        case .faTags: value = 0xF02C
-        case .faBook: value = 0xF02D
-        case .faBookmark: value = 0xF02E
-        case .faPrint: value = 0xF02F
-        case .faCamera: value = 0xF030
-        case .faFont: value = 0xF031
-        case .faBold: value = 0xF032
-        case .faItalic: value = 0xF033
-        case .faTextHeight: value = 0xF034
-        case .faTextWidth: value = 0xF035
-        case .faAlignLeft: value = 0xF036
-        case .faAlignCenter: value = 0xF037
-        case .faAlignRight: value = 0xF038
-        case .faAlignJustify: value = 0xF039
-        case .faList: value = 0xF03A
-        case .faOutdent: value = 0xF03B
-        case .faIndent: value = 0xF03C
-        case .faVideoCamera: value = 0xF03D
-        case .faPictureOutlined: value = 0xF03E
-        case .faPencil: value = 0xF040
-        case .faMapMarker: value = 0xF041
-        case .faAdjust: value = 0xF042
-        case .faTint: value = 0xF043
-        case .faPencilSquareOutlined: value = 0xF044
-        case .faShareSquareOutlined: value = 0xF045
-        case .faCheckSquareOutlined: value = 0xF046
-        case .faArrows: value = 0xF047
-        case .faStepBackward: value = 0xF048
-        case .faFastBackward: value = 0xF049
-        case .faBackward: value = 0xF04A
-        case .faPlay: value = 0xF04B
-        case .faPause: value = 0xF04C
-        case .faStop: value = 0xF04D
-        case .faForward: value = 0xF04E
-        case .faFastForward: value = 0xF050
-        case .faStepForward: value = 0xF051
-        case .faEject: value = 0xF052
-        case .faChevronLeft: value = 0xF053
-        case .faChevronRight: value = 0xF054
-        case .faPlusCircle: value = 0xF055
-        case .faMinusCircle: value = 0xF056
-        case .faTimesCircle: value = 0xF057
-        case .faCheckCircle: value = 0xF058
-        case .faQuestionCircle: value = 0xF059
-        case .faInfoCircle: value = 0xF05A
-        case .faCrosshairs: value = 0xF05B
-        case .faTimesCircleOutlined: value = 0xF05C
-        case .faCheckCircleOutlined: value = 0xF05D
-        case .faBan: value = 0xF05E
-        case .faArrowLeft: value = 0xF060
-        case .faArrowRight: value = 0xF061
-        case .faArrowUp: value = 0xF062
-        case .faArrowDown: value = 0xF063
-        case .faShare: value = 0xF064
-        case .faExpand: value = 0xF065
-        case .faCompress: value = 0xF066
-        case .faPlus: value = 0xF067
-        case .faMinus: value = 0xF068
-        case .faAsterisk: value = 0xF069
-        case .faExclamationCircle: value = 0xF06A
-        case .faGift: value = 0xF06B
-        case .faLeaf: value = 0xF06C
-        case .faFire: value = 0xF06D
-        case .faEye: value = 0xF06E
-        case .faEyeSlash: value = 0xF070
-        case .faExclamationTriangle: value = 0xF071
-        case .faPlane: value = 0xF072
-        case .faCalendar: value = 0xF073
-        case .faRandom: value = 0xF074
-        case .faComment: value = 0xF075
-        case .faMagnet: value = 0xF076
-        case .faChevronUp: value = 0xF077
-        case .faChevronDown: value = 0xF078
-        case .faRetweet: value = 0xF079
-        case .faShoppingCart: value = 0xF07A
-        case .faFolder: value = 0xF07B
-        case .faFolderOpen: value = 0xF07C
-        case .faArrowsV: value = 0xF07D
-        case .faArrowsH: value = 0xF07E
-        case .faBarChart: value = 0xF080
-        case .faTwitterSquare: value = 0xF081
-        case .faFacebookSquare: value = 0xF082
-        case .faCameraRetro: value = 0xF083
-        case .faKey: value = 0xF084
-        case .faCogs: value = 0xF085
-        case .faComments: value = 0xF086
-        case .faThumbsOutlinedUp: value = 0xF087
-        case .faThumbsOutlinedDown: value = 0xF088
-        case .faStarHalf: value = 0xF089
-        case .faHeartOutlined: value = 0xF08A
-        case .faSignOut: value = 0xF08B
-        case .faLinkedinSquare: value = 0xF08C
-        case .faThumbTack: value = 0xF08D
-        case .faExternalLink: value = 0xF08E
-        case .faSignIn: value = 0xF090
-        case .faTrophy: value = 0xF091
-        case .faGithubSquare: value = 0xF092
-        case .faUpload: value = 0xF093
-        case .faLemonOutlined: value = 0xF094
-        case .faPhone: value = 0xF095
-        case .faSquareOutlined: value = 0xF096
-        case .faBookmarkOutlined: value = 0xF097
-        case .faPhoneSquare: value = 0xF098
-        case .faTwitter: value = 0xF099
-        case .faFacebook: value = 0xF09A
-        case .faGithub: value = 0xF09B
-        case .faUnlock: value = 0xF09C
-        case .faCreditCard: value = 0xF09D
-        case .faRss: value = 0xF09E
-        case .faHddOutlined: value = 0xF0A0
-        case .faBullhorn: value = 0xF0A1
-        case .faBell: value = 0xF0F3
-        case .faCertificate: value = 0xF0A3
-        case .faHandOutlinedRight: value = 0xF0A4
-        case .faHandOutlinedLeft: value = 0xF0A5
-        case .faHandOutlinedUp: value = 0xF0A6
-        case .faHandOutlinedDown: value = 0xF0A7
-        case .faArrowCircleLeft: value = 0xF0A8
-        case .faArrowCircleRight: value = 0xF0A9
-        case .faArrowCircleUp: value = 0xF0Aa
-        case .faArrowCircleDown: value = 0xF0Ab
-        case .faGlobe: value = 0xF0Ac
-        case .faWrench: value = 0xF0Ad
-        case .faTasks: value = 0xF0Ae
-        case .faFilter: value = 0xF0B0
-        case .faBriefcase: value = 0xF0B1
-        case .faArrowsAlt: value = 0xF0B2
-        case .faUsers: value = 0xF0C0
-        case .faLink: value = 0xF0C1
-        case .faCloud: value = 0xF0C2
-        case .faFlask: value = 0xF0C3
-        case .faScissors: value = 0xF0C4
-        case .faFilesOutlined: value = 0xF0C5
-        case .faPaperclip: value = 0xF0C6
-        case .faFloppyOutlined: value = 0xF0C7
-        case .faSquare: value = 0xF0C8
-        case .faBars: value = 0xF0C9
-        case .faListUl: value = 0xF0Ca
-        case .faListOl: value = 0xF0Cb
-        case .faStrikethrough: value = 0xF0Cc
-        case .faUnderline: value = 0xF0Cd
-        case .faTable: value = 0xF0Ce
-        case .faMagic: value = 0xF0D0
-        case .faTruck: value = 0xF0D1
-        case .faPinterest: value = 0xF0D2
-        case .faPinterestSquare: value = 0xF0D3
-        case .faGooglePlusSquare: value = 0xF0D4
-        case .faGooglePlus: value = 0xF0D5
-        case .faMoney: value = 0xF0D6
-        case .faCaretDown: value = 0xF0D7
-        case .faCaretUp: value = 0xF0D8
-        case .faCaretLeft: value = 0xF0D9
-        case .faCaretRight: value = 0xF0Da
-        case .faColumns: value = 0xF0Db
-        case .faSort: value = 0xF0Dc
-        case .faSortDesc: value = 0xF0Dd
-        case .faSortAsc: value = 0xF0De
-        case .faEnvelope: value = 0xF0E0
-        case .faLinkedin: value = 0xF0E1
-        case .faUndo: value = 0xF0E2
-        case .faGavel: value = 0xF0E3
-        case .faTachometer: value = 0xF0E4
-        case .faCommentOutlined: value = 0xF0E5
-        case .faCommentsOutlined: value = 0xF0E6
-        case .faBolt: value = 0xF0E7
-        case .faSitemap: value = 0xF0E8
-        case .faUmbrella: value = 0xF0E9
-        case .faClipboard: value = 0xF0Ea
-        case .faLightbulbOutlined: value = 0xF0Eb
-        case .faExchange: value = 0xF0Ec
-        case .faCloudDownload: value = 0xF0Ed
-        case .faCloudUpload: value = 0xF0Ee
-        case .faUserMd: value = 0xF0F0
-        case .faStethoscope: value = 0xF0F1
-        case .faSuitcase: value = 0xF0F2
-        case .faBellOutlined: value = 0xF0A2
-        case .faCoffee: value = 0xF0F4
-        case .faCutlery: value = 0xF0F5
-        case .faFileTextOutlined: value = 0xF0F6
-        case .faBuildingOutlined: value = 0xF0F7
-        case .faHospitalOutlined: value = 0xF0F8
-        case .faAmbulance: value = 0xF0F9
-        case .faMedkit: value = 0xF0Fa
-        case .faFighterJet: value = 0xF0Fb
-        case .faBeer: value = 0xF0Fc
-        case .faHSquare: value = 0xF0Fd
-        case .faPlusSquare: value = 0xF0Fe
-        case .faAngleDoubleLeft: value = 0xF100
-        case .faAngleDoubleRight: value = 0xF101
-        case .faAngleDoubleUp: value = 0xF102
-        case .faAngleDoubleDown: value = 0xF103
-        case .faAngleLeft: value = 0xF104
-        case .faAngleRight: value = 0xF105
-        case .faAngleUp: value = 0xF106
-        case .faAngleDown: value = 0xF107
-        case .faDesktop: value = 0xF108
-        case .faLaptop: value = 0xF109
-        case .faTablet: value = 0xF10A
-        case .faMobile: value = 0xF10B
-        case .faCircleOutlined: value = 0xF10C
-        case .faQuoteLeft: value = 0xF10D
-        case .faQuoteRight: value = 0xF10E
-        case .faSpinner: value = 0xF110
-        case .faCircle: value = 0xF111
-        case .faReply: value = 0xF112
-        case .faGithubAlt: value = 0xF113
-        case .faFolderOutlined: value = 0xF114
-        case .faFolderOpenOutlined: value = 0xF115
-        case .faSmileOutlined: value = 0xF118
-        case .faFrownOutlined: value = 0xF119
-        case .faMehOutlined: value = 0xF11A
-        case .faGamepad: value = 0xF11B
-        case .faKeyboardOutlined: value = 0xF11C
-        case .faFlagOutlined: value = 0xF11D
-        case .faFlagCheckered: value = 0xF11E
-        case .faTerminal: value = 0xF120
-        case .faCode: value = 0xF121
-        case .faReplyAll: value = 0xF122
-        case .faStarHalfOutlined: value = 0xF123
-        case .faLocationArrow: value = 0xF124
-        case .faCrop: value = 0xF125
-        case .faCodeFork: value = 0xF126
-        case .faChainBroken: value = 0xF127
-        case .faQuestion: value = 0xF128
-        case .faInfo: value = 0xF129
-        case .faExclamation: value = 0xF12A
-        case .faSuperscript: value = 0xF12B
-        case .faSubscript: value = 0xF12C
-        case .faEraser: value = 0xF12D
-        case .faPuzzlePiece: value = 0xF12E
-        case .faMicrophone: value = 0xF130
-        case .faMicrophoneSlash: value = 0xF131
-        case .faShield: value = 0xF132
-        case .faCalendarOutlined: value = 0xF133
-        case .faFireExtinguisher: value = 0xF134
-        case .faRocket: value = 0xF135
-        case .faMaxcdn: value = 0xF136
-        case .faChevronCircleLeft: value = 0xF137
-        case .faChevronCircleRight: value = 0xF138
-        case .faChevronCircleUp: value = 0xF139
-        case .faChevronCircleDown: value = 0xF13A
-        case .faHtml5: value = 0xF13B
-        case .faCss3: value = 0xF13C
-        case .faAnchor: value = 0xF13D
-        case .faUnlockAlt: value = 0xF13E
-        case .faBullseye: value = 0xF140
-        case .faEllipsisH: value = 0xF141
-        case .faEllipsisV: value = 0xF142
-        case .faRssSquare: value = 0xF143
-        case .faPlayCircle: value = 0xF144
-        case .faTicket: value = 0xF145
-        case .faMinusSquare: value = 0xF146
-        case .faMinusSquareOutlined: value = 0xF147
-        case .faLevelUp: value = 0xF148
-        case .faLevelDown: value = 0xF149
-        case .faCheckSquare: value = 0xF14A
-        case .faPencilSquare: value = 0xF14B
-        case .faExternalLinkSquare: value = 0xF14C
-        case .faShareSquare: value = 0xF14D
-        case .faCompass: value = 0xF14E
-        case .faCaretSquareOutlinedDown: value = 0xF150
-        case .faCaretSquareOutlinedUp: value = 0xF151
-        case .faCaretSquareOutlinedRight: value = 0xF152
-        case .faEur: value = 0xF153
-        case .faGbp: value = 0xF154
-        case .faUsd: value = 0xF155
-        case .faInr: value = 0xF156
-        case .faJpy: value = 0xF157
-        case .faRub: value = 0xF158
-        case .faKrw: value = 0xF159
-        case .faBtc: value = 0xF15A
-        case .faFile: value = 0xF15B
-        case .faFileText: value = 0xF15C
-        case .faSortAlphaAsc: value = 0xF15D
-        case .faSortAlphaDesc: value = 0xF15E
-        case .faSortAmountAsc: value = 0xF160
-        case .faSortAmountDesc: value = 0xF161
-        case .faSortNumericAsc: value = 0xF162
-        case .faSortNumericDesc: value = 0xF163
-        case .faThumbsUp: value = 0xF164
-        case .faThumbsDown: value = 0xF165
-        case .faYoutubeSquare: value = 0xF166
-        case .faYoutube: value = 0xF167
-        case .faXing: value = 0xF168
-        case .faXingSquare: value = 0xF169
-        case .faYoutubePlay: value = 0xF16A
-        case .faDropbox: value = 0xF16B
-        case .faStackOverflow: value = 0xF16C
-        case .faInstagram: value = 0xF16D
-        case .faFlickr: value = 0xF16E
-        case .faAdn: value = 0xF170
-        case .faBitbucket: value = 0xF171
-        case .faBitbucketSquare: value = 0xF172
-        case .faTumblr: value = 0xF173
-        case .faTumblrSquare: value = 0xF174
-        case .faLongArrowDown: value = 0xF175
-        case .faLongArrowUp: value = 0xF176
-        case .faLongArrowLeft: value = 0xF177
-        case .faLongArrowRight: value = 0xF178
-        case .faApple: value = 0xF179
-        case .faWindows: value = 0xF17A
-        case .faAndroid: value = 0xF17B
-        case .faLinux: value = 0xF17C
-        case .faDribbble: value = 0xF17D
-        case .faSkype: value = 0xF17E
-        case .faFoursquare: value = 0xF180
-        case .faTrello: value = 0xF181
-        case .faFemale: value = 0xF182
-        case .faMale: value = 0xF183
-        case .faGratipay: value = 0xF184
-        case .faSunOutlined: value = 0xF185
-        case .faMoonOutlined: value = 0xF186
-        case .faArchive: value = 0xF187
-        case .faBug: value = 0xF188
-        case .faVk: value = 0xF189
-        case .faWeibo: value = 0xF18A
-        case .faRenren: value = 0xF18B
-        case .faPagelines: value = 0xF18C
-        case .faStackExchange: value = 0xF18D
-        case .faArrowCircleOutlinedRight: value = 0xF18E
-        case .faArrowCircleOutlinedLeft: value = 0xF190
-        case .faCaretSquareOutlinedLeft: value = 0xF191
-        case .faDotCircleOutlined: value = 0xF192
-        case .faWheelchair: value = 0xF193
-        case .faVimeoSquare: value = 0xF194
-        case .faTry: value = 0xF195
-        case .faPlusSquareOutlined: value = 0xF196
-        case .faSpaceShuttle: value = 0xF197
-        case .faSlack: value = 0xF198
-        case .faEnvelopeSquare: value = 0xF199
-        case .faWordpress: value = 0xF19A
-        case .faOpenid: value = 0xF19B
-        case .faUniversity: value = 0xF19C
-        case .faGraduationCap: value = 0xF19D
-        case .faYahoo: value = 0xF19E
-        case .faGoogle: value = 0xF1A0
-        case .faReddit: value = 0xF1A1
-        case .faRedditSquare: value = 0xF1A2
-        case .faStumbleuponCircle: value = 0xF1A3
-        case .faStumbleupon: value = 0xF1A4
-        case .faDelicious: value = 0xF1A5
-        case .faDigg: value = 0xF1A6
-        case .faPiedPiperPp: value = 0xF1A7
-        case .faPiedPiperAlt: value = 0xF1A8
-        case .faDrupal: value = 0xF1A9
-        case .faJoomla: value = 0xF1Aa
-        case .faLanguage: value = 0xF1Ab
-        case .faFax: value = 0xF1Ac
-        case .faBuilding: value = 0xF1Ad
-        case .faChild: value = 0xF1Ae
-        case .faPaw: value = 0xF1B0
-        case .faSpoon: value = 0xF1B1
-        case .faCube: value = 0xF1B2
-        case .faCubes: value = 0xF1B3
-        case .faBehance: value = 0xF1B4
-        case .faBehanceSquare: value = 0xF1B5
-        case .faSteam: value = 0xF1B6
-        case .faSteamSquare: value = 0xF1B7
-        case .faRecycle: value = 0xF1B8
-        case .faCar: value = 0xF1B9
-        case .faTaxi: value = 0xF1Ba
-        case .faTree: value = 0xF1Bb
-        case .faSpotify: value = 0xF1Bc
-        case .faDeviantart: value = 0xF1Bd
-        case .faSoundcloud: value = 0xF1Be
-        case .faDatabase: value = 0xF1C0
-        case .faFilePdfOutlined: value = 0xF1C1
-        case .faFileWordOutlined: value = 0xF1C2
-        case .faFileExcelOutlined: value = 0xF1C3
-        case .faFilePowerpointOutlined: value = 0xF1C4
-        case .faFileImageOutlined: value = 0xF1C5
-        case .faFileArchiveOutlined: value = 0xF1C6
-        case .faFileAudioOutlined: value = 0xF1C7
-        case .faFileVideoOutlined: value = 0xF1C8
-        case .faFileCodeOutlined: value = 0xF1C9
-        case .faVine: value = 0xF1Ca
-        case .faCodepen: value = 0xF1Cb
-        case .faJsfiddle: value = 0xF1Cc
-        case .faLifeRing: value = 0xF1Cd
-        case .faCircleOutlinedNotch: value = 0xF1Ce
-        case .faRebel: value = 0xF1D0
-        case .faEmpire: value = 0xF1D1
-        case .faGitSquare: value = 0xF1D2
-        case .faGit: value = 0xF1D3
-        case .faHackerNews: value = 0xF1D4
-        case .faTencentWeibo: value = 0xF1D5
-        case .faQq: value = 0xF1D6
-        case .faWeixin: value = 0xF1D7
-        case .faPaperPlane: value = 0xF1D8
-        case .faPaperPlaneOutlined: value = 0xF1D9
-        case .faHistory: value = 0xF1Da
-        case .faCircleThin: value = 0xF1Db
-        case .faHeader: value = 0xF1Dc
-        case .faParagraph: value = 0xF1Dd
-        case .faSliders: value = 0xF1De
-        case .faShareAlt: value = 0xF1E0
-        case .faShareAltSquare: value = 0xF1E1
-        case .faBomb: value = 0xF1E2
-        case .faFutbolOutlined: value = 0xF1E3
-        case .faTty: value = 0xF1E4
-        case .faBinoculars: value = 0xF1E5
-        case .faPlug: value = 0xF1E6
-        case .faSlideshare: value = 0xF1E7
-        case .faTwitch: value = 0xF1E8
-        case .faYelp: value = 0xF1E9
-        case .faNewspaperOutlined: value = 0xF1Ea
-        case .faWifi: value = 0xF1Eb
-        case .faCalculator: value = 0xF1Ec
-        case .faPaypal: value = 0xF1Ed
-        case .faGoogleWallet: value = 0xF1Ee
-        case .faCcVisa: value = 0xF1F0
-        case .faCcMastercard: value = 0xF1F1
-        case .faCcDiscover: value = 0xF1F2
-        case .faCcAmex: value = 0xF1F3
-        case .faCcPaypal: value = 0xF1F4
-        case .faCcStripe: value = 0xF1F5
-        case .faBellSlash: value = 0xF1F6
-        case .faBellSlashOutlined: value = 0xF1F7
-        case .faTrash: value = 0xF1F8
-        case .faCopyright: value = 0xF1F9
-        case .faAt: value = 0xF1Fa
-        case .faEyedropper: value = 0xF1Fb
-        case .faPaintBrush: value = 0xF1Fc
-        case .faBirthdayCake: value = 0xF1Fd
-        case .faAreaChart: value = 0xF1Fe
-        case .faPieChart: value = 0xF200
-        case .faLineChart: value = 0xF201
-        case .faLastfm: value = 0xF202
-        case .faLastfmSquare: value = 0xF203
-        case .faToggleOff: value = 0xF204
-        case .faToggleOn: value = 0xF205
-        case .faBicycle: value = 0xF206
-        case .faBus: value = 0xF207
-        case .faIoxhost: value = 0xF208
-        case .faAngellist: value = 0xF209
-        case .faCc: value = 0xF20A
-        case .faIls: value = 0xF20B
-        case .faMeanpath: value = 0xF20C
-        case .faBuysellads: value = 0xF20D
-        case .faConnectdevelop: value = 0xF20E
-        case .faDashcube: value = 0xF210
-        case .faForumbee: value = 0xF211
-        case .faLeanpub: value = 0xF212
-        case .faSellsy: value = 0xF213
-        case .faShirtsinbulk: value = 0xF214
-        case .faSimplybuilt: value = 0xF215
-        case .faSkyatlas: value = 0xF216
-        case .faCartPlus: value = 0xF217
-        case .faCartArrowDown: value = 0xF218
-        case .faDiamond: value = 0xF219
-        case .faShip: value = 0xF21A
-        case .faUserSecret: value = 0xF21B
-        case .faMotorcycle: value = 0xF21C
-        case .faStreetView: value = 0xF21D
-        case .faHeartbeat: value = 0xF21E
-        case .faVenus: value = 0xF221
-        case .faMars: value = 0xF222
-        case .faMercury: value = 0xF223
-        case .faTransgender: value = 0xF224
-        case .faTransgenderAlt: value = 0xF225
-        case .faVenusDouble: value = 0xF226
-        case .faMarsDouble: value = 0xF227
-        case .faVenusMars: value = 0xF228
-        case .faMarsStroke: value = 0xF229
-        case .faMarsStrokeV: value = 0xF22A
-        case .faMarsStrokeH: value = 0xF22B
-        case .faNeuter: value = 0xF22C
-        case .faGenderless: value = 0xF22D
-        case .faFacebookOfficial: value = 0xF230
-        case .faPinterestP: value = 0xF231
-        case .faWhatsapp: value = 0xF232
-        case .faServer: value = 0xF233
-        case .faUserPlus: value = 0xF234
-        case .faUserTimes: value = 0xF235
-        case .faBed: value = 0xF236
-        case .faViacoin: value = 0xF237
-        case .faTrain: value = 0xF238
-        case .faSubway: value = 0xF239
-        case .faMedium: value = 0xF23A
-        case .faYCombinator: value = 0xF23B
-        case .faOptinMonster: value = 0xF23C
-        case .faOpencart: value = 0xF23D
-        case .faExpeditedssl: value = 0xF23E
-        case .faBatteryFull: value = 0xF240
-        case .faBatteryThreeQuarters: value = 0xF241
-        case .faBatteryHalf: value = 0xF242
-        case .faBatteryQuarter: value = 0xF243
-        case .faBatteryEmpty: value = 0xF244
-        case .faMousePointer: value = 0xF245
-        case .faICursor: value = 0xF246
-        case .faObjectGroup: value = 0xF247
-        case .faObjectUngroup: value = 0xF248
-        case .faStickyNote: value = 0xF249
-        case .faStickyNoteOutlined: value = 0xF24A
-        case .faCcJcb: value = 0xF24B
-        case .faCcDinersClub: value = 0xF24C
-        case .faClone: value = 0xF24D
-        case .faBalanceScale: value = 0xF24E
-        case .faHourglassOutlined: value = 0xF250
-        case .faHourglassStart: value = 0xF251
-        case .faHourglassHalf: value = 0xF252
-        case .faHourglassEnd: value = 0xF253
-        case .faHourglass: value = 0xF254
-        case .faHandRockOutlined: value = 0xF255
-        case .faHandPaperOutlined: value = 0xF256
-        case .faHandScissorsOutlined: value = 0xF257
-        case .faHandLizardOutlined: value = 0xF258
-        case .faHandSpockOutlined: value = 0xF259
-        case .faHandPointerOutlined: value = 0xF25A
-        case .faHandPeaceOutlined: value = 0xF25B
-        case .faTrademark: value = 0xF25C
-        case .faRegistered: value = 0xF25D
-        case .faCreativeCommons: value = 0xF25E
-        case .faGg: value = 0xF260
-        case .faGgCircle: value = 0xF261
-        case .faTripadvisor: value = 0xF262
-        case .faOdnoklassniki: value = 0xF263
-        case .faOdnoklassnikiSquare: value = 0xF264
-        case .faGetPocket: value = 0xF265
-        case .faWikipediaW: value = 0xF266
-        case .faSafari: value = 0xF267
-        case .faChrome: value = 0xF268
-        case .faFirefox: value = 0xF269
-        case .faOpera: value = 0xF26A
-        case .faInternetExplorer: value = 0xF26B
-        case .faTelevision: value = 0xF26C
-        case .faContao: value = 0xF26D
-        case .fa500px: value = 0xF26E
-        case .faAmazon: value = 0xF270
-        case .faCalendarPlusOutlined: value = 0xF271
-        case .faCalendarMinusOutlined: value = 0xF272
-        case .faCalendarTimesOutlined: value = 0xF273
-        case .faCalendarCheckOutlined: value = 0xF274
-        case .faIndustry: value = 0xF275
-        case .faMapPin: value = 0xF276
-        case .faMapSigns: value = 0xF277
-        case .faMapOutlined: value = 0xF278
-        case .faMap: value = 0xF279
-        case .faCommenting: value = 0xF27A
-        case .faCommentingOutlined: value = 0xF27B
-        case .faHouzz: value = 0xF27C
-        case .faVimeo: value = 0xF27D
-        case .faBlackTie: value = 0xF27E
-        case .faFonticons: value = 0xF280
-        case .faRedditAlien: value = 0xF281
-        case .faEdge: value = 0xF282
-        case .faCreditCardAlt: value = 0xF283
-        case .faCodiepie: value = 0xF284
-        case .faModx: value = 0xF285
-        case .faFortAwesome: value = 0xF286
-        case .faUsb: value = 0xF287
-        case .faProductHunt: value = 0xF288
-        case .faMixcloud: value = 0xF289
-        case .faScribd: value = 0xF28A
-        case .faPauseCircle: value = 0xF28B
-        case .faPauseCircleOutlined: value = 0xF28C
-        case .faStopCircle: value = 0xF28D
-        case .faStopCircleOutlined: value = 0xF28E
-        case .faShoppingBag: value = 0xF290
-        case .faShoppingBasket: value = 0xF291
-        case .faHashtag: value = 0xF292
-        case .faBluetooth: value = 0xF293
-        case .faBluetoothB: value = 0xF294
-        case .faPercent: value = 0xF295
-        case .faGitlab: value = 0xF296
-        case .faWpbeginner: value = 0xF297
-        case .faWpforms: value = 0xF298
-        case .faEnvira: value = 0xF299
-        case .faUniversalAccess: value = 0xF29A
-        case .faWheelchairAlt: value = 0xF29B
-        case .faQuestionCircleOutlined: value = 0xF29C
-        case .faBlind: value = 0xF29D
-        case .faAudioDescription: value = 0xF29E
-        case .faVolumeControlPhone: value = 0xF2A0
-        case .faBraille: value = 0xF2A1
-        case .faAssistiveListeningSystems: value = 0xF2A2
-        case .faAmericanSignLanguageInterpreting: value = 0xF2A3
-        case .faDeaf: value = 0xF2A4
-        case .faGlide: value = 0xF2A5
-        case .faGlideG: value = 0xF2A6
-        case .faSignLanguage: value = 0xF2A7
-        case .faLowVision: value = 0xF2A8
-        case .faViadeo: value = 0xF2A9
-        case .faViadeoSquare: value = 0xF2Aa
-        case .faSnapchat: value = 0xF2Ab
-        case .faSnapchatGhost: value = 0xF2Ac
-        case .faSnapchatSquare: value = 0xF2Ad
-        case .faPiedPiper: value = 0xF2Ae
-        case .faFirstOrder: value = 0xF2B0
-        case .faYoast: value = 0xF2B1
-        case .faThemeisle: value = 0xF2B2
-        case .faGooglePlusOfficial: value = 0xF2B3
-        case .faFontAwesome: value = 0xF2B4
+        case .faGlass: return "\u{F000}"
+        case .faMusic: return "\u{F001}"
+        case .faSearch: return "\u{F002}"
+        case .faEnvelopeOutlined: return "\u{F003}"
+        case .faHeart: return "\u{F004}"
+        case .faStar: return "\u{F005}"
+        case .faStarOutlined: return "\u{F006}"
+        case .faUser: return "\u{F007}"
+        case .faFilm: return "\u{F008}"
+        case .faThLarge: return "\u{F009}"
+        case .faTh: return "\u{F00A}"
+        case .faThList: return "\u{F00B}"
+        case .faCheck: return "\u{F00C}"
+        case .faTimes: return "\u{F00D}"
+        case .faSearchPlus: return "\u{F00E}"
+        case .faSearchMinus: return "\u{F010}"
+        case .faPowerOff: return "\u{F011}"
+        case .faSignal: return "\u{F012}"
+        case .faCog: return "\u{F013}"
+        case .faTrashOutlined: return "\u{F014}"
+        case .faHome: return "\u{F015}"
+        case .faFileOutlined: return "\u{F016}"
+        case .faClockOutlined: return "\u{F017}"
+        case .faRoad: return "\u{F018}"
+        case .faDownload: return "\u{F019}"
+        case .faArrowCircleOutlinedDown: return "\u{F01A}"
+        case .faArrowCircleOutlinedUp: return "\u{F01B}"
+        case .faInbox: return "\u{F01C}"
+        case .faPlayCircleOutlined: return "\u{F01D}"
+        case .faRepeat: return "\u{F01E}"
+        case .faRefresh: return "\u{F021}"
+        case .faListAlt: return "\u{F022}"
+        case .faLock: return "\u{F023}"
+        case .faFlag: return "\u{F024}"
+        case .faHeadphones: return "\u{F025}"
+        case .faVolumeOff: return "\u{F026}"
+        case .faVolumeDown: return "\u{F027}"
+        case .faVolumeUp: return "\u{F028}"
+        case .faQrcode: return "\u{F029}"
+        case .faBarcode: return "\u{F02A}"
+        case .faTag: return "\u{F02B}"
+        case .faTags: return "\u{F02C}"
+        case .faBook: return "\u{F02D}"
+        case .faBookmark: return "\u{F02E}"
+        case .faPrint: return "\u{F02F}"
+        case .faCamera: return "\u{F030}"
+        case .faFont: return "\u{F031}"
+        case .faBold: return "\u{F032}"
+        case .faItalic: return "\u{F033}"
+        case .faTextHeight: return "\u{F034}"
+        case .faTextWidth: return "\u{F035}"
+        case .faAlignLeft: return "\u{F036}"
+        case .faAlignCenter: return "\u{F037}"
+        case .faAlignRight: return "\u{F038}"
+        case .faAlignJustify: return "\u{F039}"
+        case .faList: return "\u{F03A}"
+        case .faOutdent: return "\u{F03B}"
+        case .faIndent: return "\u{F03C}"
+        case .faVideoCamera: return "\u{F03D}"
+        case .faPictureOutlined: return "\u{F03E}"
+        case .faPencil: return "\u{F040}"
+        case .faMapMarker: return "\u{F041}"
+        case .faAdjust: return "\u{F042}"
+        case .faTint: return "\u{F043}"
+        case .faPencilSquareOutlined: return "\u{F044}"
+        case .faShareSquareOutlined: return "\u{F045}"
+        case .faCheckSquareOutlined: return "\u{F046}"
+        case .faArrows: return "\u{F047}"
+        case .faStepBackward: return "\u{F048}"
+        case .faFastBackward: return "\u{F049}"
+        case .faBackward: return "\u{F04A}"
+        case .faPlay: return "\u{F04B}"
+        case .faPause: return "\u{F04C}"
+        case .faStop: return "\u{F04D}"
+        case .faForward: return "\u{F04E}"
+        case .faFastForward: return "\u{F050}"
+        case .faStepForward: return "\u{F051}"
+        case .faEject: return "\u{F052}"
+        case .faChevronLeft: return "\u{F053}"
+        case .faChevronRight: return "\u{F054}"
+        case .faPlusCircle: return "\u{F055}"
+        case .faMinusCircle: return "\u{F056}"
+        case .faTimesCircle: return "\u{F057}"
+        case .faCheckCircle: return "\u{F058}"
+        case .faQuestionCircle: return "\u{F059}"
+        case .faInfoCircle: return "\u{F05A}"
+        case .faCrosshairs: return "\u{F05B}"
+        case .faTimesCircleOutlined: return "\u{F05C}"
+        case .faCheckCircleOutlined: return "\u{F05D}"
+        case .faBan: return "\u{F05E}"
+        case .faArrowLeft: return "\u{F060}"
+        case .faArrowRight: return "\u{F061}"
+        case .faArrowUp: return "\u{F062}"
+        case .faArrowDown: return "\u{F063}"
+        case .faShare: return "\u{F064}"
+        case .faExpand: return "\u{F065}"
+        case .faCompress: return "\u{F066}"
+        case .faPlus: return "\u{F067}"
+        case .faMinus: return "\u{F068}"
+        case .faAsterisk: return "\u{F069}"
+        case .faExclamationCircle: return "\u{F06A}"
+        case .faGift: return "\u{F06B}"
+        case .faLeaf: return "\u{F06C}"
+        case .faFire: return "\u{F06D}"
+        case .faEye: return "\u{F06E}"
+        case .faEyeSlash: return "\u{F070}"
+        case .faExclamationTriangle: return "\u{F071}"
+        case .faPlane: return "\u{F072}"
+        case .faCalendar: return "\u{F073}"
+        case .faRandom: return "\u{F074}"
+        case .faComment: return "\u{F075}"
+        case .faMagnet: return "\u{F076}"
+        case .faChevronUp: return "\u{F077}"
+        case .faChevronDown: return "\u{F078}"
+        case .faRetweet: return "\u{F079}"
+        case .faShoppingCart: return "\u{F07A}"
+        case .faFolder: return "\u{F07B}"
+        case .faFolderOpen: return "\u{F07C}"
+        case .faArrowsV: return "\u{F07D}"
+        case .faArrowsH: return "\u{F07E}"
+        case .faBarChart: return "\u{F080}"
+        case .faTwitterSquare: return "\u{F081}"
+        case .faFacebookSquare: return "\u{F082}"
+        case .faCameraRetro: return "\u{F083}"
+        case .faKey: return "\u{F084}"
+        case .faCogs: return "\u{F085}"
+        case .faComments: return "\u{F086}"
+        case .faThumbsOutlinedUp: return "\u{F087}"
+        case .faThumbsOutlinedDown: return "\u{F088}"
+        case .faStarHalf: return "\u{F089}"
+        case .faHeartOutlined: return "\u{F08A}"
+        case .faSignOut: return "\u{F08B}"
+        case .faLinkedinSquare: return "\u{F08C}"
+        case .faThumbTack: return "\u{F08D}"
+        case .faExternalLink: return "\u{F08E}"
+        case .faSignIn: return "\u{F090}"
+        case .faTrophy: return "\u{F091}"
+        case .faGithubSquare: return "\u{F092}"
+        case .faUpload: return "\u{F093}"
+        case .faLemonOutlined: return "\u{F094}"
+        case .faPhone: return "\u{F095}"
+        case .faSquareOutlined: return "\u{F096}"
+        case .faBookmarkOutlined: return "\u{F097}"
+        case .faPhoneSquare: return "\u{F098}"
+        case .faTwitter: return "\u{F099}"
+        case .faFacebook: return "\u{F09A}"
+        case .faGithub: return "\u{F09B}"
+        case .faUnlock: return "\u{F09C}"
+        case .faCreditCard: return "\u{F09D}"
+        case .faRss: return "\u{F09E}"
+        case .faHddOutlined: return "\u{F0A0}"
+        case .faBullhorn: return "\u{F0A1}"
+        case .faBell: return "\u{F0F3}"
+        case .faCertificate: return "\u{F0A3}"
+        case .faHandOutlinedRight: return "\u{F0A4}"
+        case .faHandOutlinedLeft: return "\u{F0A5}"
+        case .faHandOutlinedUp: return "\u{F0A6}"
+        case .faHandOutlinedDown: return "\u{F0A7}"
+        case .faArrowCircleLeft: return "\u{F0A8}"
+        case .faArrowCircleRight: return "\u{F0A9}"
+        case .faArrowCircleUp: return "\u{F0Aa}"
+        case .faArrowCircleDown: return "\u{F0Ab}"
+        case .faGlobe: return "\u{F0Ac}"
+        case .faWrench: return "\u{F0Ad}"
+        case .faTasks: return "\u{F0Ae}"
+        case .faFilter: return "\u{F0B0}"
+        case .faBriefcase: return "\u{F0B1}"
+        case .faArrowsAlt: return "\u{F0B2}"
+        case .faUsers: return "\u{F0C0}"
+        case .faLink: return "\u{F0C1}"
+        case .faCloud: return "\u{F0C2}"
+        case .faFlask: return "\u{F0C3}"
+        case .faScissors: return "\u{F0C4}"
+        case .faFilesOutlined: return "\u{F0C5}"
+        case .faPaperclip: return "\u{F0C6}"
+        case .faFloppyOutlined: return "\u{F0C7}"
+        case .faSquare: return "\u{F0C8}"
+        case .faBars: return "\u{F0C9}"
+        case .faListUl: return "\u{F0Ca}"
+        case .faListOl: return "\u{F0Cb}"
+        case .faStrikethrough: return "\u{F0Cc}"
+        case .faUnderline: return "\u{F0Cd}"
+        case .faTable: return "\u{F0Ce}"
+        case .faMagic: return "\u{F0D0}"
+        case .faTruck: return "\u{F0D1}"
+        case .faPinterest: return "\u{F0D2}"
+        case .faPinterestSquare: return "\u{F0D3}"
+        case .faGooglePlusSquare: return "\u{F0D4}"
+        case .faGooglePlus: return "\u{F0D5}"
+        case .faMoney: return "\u{F0D6}"
+        case .faCaretDown: return "\u{F0D7}"
+        case .faCaretUp: return "\u{F0D8}"
+        case .faCaretLeft: return "\u{F0D9}"
+        case .faCaretRight: return "\u{F0Da}"
+        case .faColumns: return "\u{F0Db}"
+        case .faSort: return "\u{F0Dc}"
+        case .faSortDesc: return "\u{F0Dd}"
+        case .faSortAsc: return "\u{F0De}"
+        case .faEnvelope: return "\u{F0E0}"
+        case .faLinkedin: return "\u{F0E1}"
+        case .faUndo: return "\u{F0E2}"
+        case .faGavel: return "\u{F0E3}"
+        case .faTachometer: return "\u{F0E4}"
+        case .faCommentOutlined: return "\u{F0E5}"
+        case .faCommentsOutlined: return "\u{F0E6}"
+        case .faBolt: return "\u{F0E7}"
+        case .faSitemap: return "\u{F0E8}"
+        case .faUmbrella: return "\u{F0E9}"
+        case .faClipboard: return "\u{F0Ea}"
+        case .faLightbulbOutlined: return "\u{F0Eb}"
+        case .faExchange: return "\u{F0Ec}"
+        case .faCloudDownload: return "\u{F0Ed}"
+        case .faCloudUpload: return "\u{F0Ee}"
+        case .faUserMd: return "\u{F0F0}"
+        case .faStethoscope: return "\u{F0F1}"
+        case .faSuitcase: return "\u{F0F2}"
+        case .faBellOutlined: return "\u{F0A2}"
+        case .faCoffee: return "\u{F0F4}"
+        case .faCutlery: return "\u{F0F5}"
+        case .faFileTextOutlined: return "\u{F0F6}"
+        case .faBuildingOutlined: return "\u{F0F7}"
+        case .faHospitalOutlined: return "\u{F0F8}"
+        case .faAmbulance: return "\u{F0F9}"
+        case .faMedkit: return "\u{F0Fa}"
+        case .faFighterJet: return "\u{F0Fb}"
+        case .faBeer: return "\u{F0Fc}"
+        case .faHSquare: return "\u{F0Fd}"
+        case .faPlusSquare: return "\u{F0Fe}"
+        case .faAngleDoubleLeft: return "\u{F100}"
+        case .faAngleDoubleRight: return "\u{F101}"
+        case .faAngleDoubleUp: return "\u{F102}"
+        case .faAngleDoubleDown: return "\u{F103}"
+        case .faAngleLeft: return "\u{F104}"
+        case .faAngleRight: return "\u{F105}"
+        case .faAngleUp: return "\u{F106}"
+        case .faAngleDown: return "\u{F107}"
+        case .faDesktop: return "\u{F108}"
+        case .faLaptop: return "\u{F109}"
+        case .faTablet: return "\u{F10A}"
+        case .faMobile: return "\u{F10B}"
+        case .faCircleOutlined: return "\u{F10C}"
+        case .faQuoteLeft: return "\u{F10D}"
+        case .faQuoteRight: return "\u{F10E}"
+        case .faSpinner: return "\u{F110}"
+        case .faCircle: return "\u{F111}"
+        case .faReply: return "\u{F112}"
+        case .faGithubAlt: return "\u{F113}"
+        case .faFolderOutlined: return "\u{F114}"
+        case .faFolderOpenOutlined: return "\u{F115}"
+        case .faSmileOutlined: return "\u{F118}"
+        case .faFrownOutlined: return "\u{F119}"
+        case .faMehOutlined: return "\u{F11A}"
+        case .faGamepad: return "\u{F11B}"
+        case .faKeyboardOutlined: return "\u{F11C}"
+        case .faFlagOutlined: return "\u{F11D}"
+        case .faFlagCheckered: return "\u{F11E}"
+        case .faTerminal: return "\u{F120}"
+        case .faCode: return "\u{F121}"
+        case .faReplyAll: return "\u{F122}"
+        case .faStarHalfOutlined: return "\u{F123}"
+        case .faLocationArrow: return "\u{F124}"
+        case .faCrop: return "\u{F125}"
+        case .faCodeFork: return "\u{F126}"
+        case .faChainBroken: return "\u{F127}"
+        case .faQuestion: return "\u{F128}"
+        case .faInfo: return "\u{F129}"
+        case .faExclamation: return "\u{F12A}"
+        case .faSuperscript: return "\u{F12B}"
+        case .faSubscript: return "\u{F12C}"
+        case .faEraser: return "\u{F12D}"
+        case .faPuzzlePiece: return "\u{F12E}"
+        case .faMicrophone: return "\u{F130}"
+        case .faMicrophoneSlash: return "\u{F131}"
+        case .faShield: return "\u{F132}"
+        case .faCalendarOutlined: return "\u{F133}"
+        case .faFireExtinguisher: return "\u{F134}"
+        case .faRocket: return "\u{F135}"
+        case .faMaxcdn: return "\u{F136}"
+        case .faChevronCircleLeft: return "\u{F137}"
+        case .faChevronCircleRight: return "\u{F138}"
+        case .faChevronCircleUp: return "\u{F139}"
+        case .faChevronCircleDown: return "\u{F13A}"
+        case .faHtml5: return "\u{F13B}"
+        case .faCss3: return "\u{F13C}"
+        case .faAnchor: return "\u{F13D}"
+        case .faUnlockAlt: return "\u{F13E}"
+        case .faBullseye: return "\u{F140}"
+        case .faEllipsisH: return "\u{F141}"
+        case .faEllipsisV: return "\u{F142}"
+        case .faRssSquare: return "\u{F143}"
+        case .faPlayCircle: return "\u{F144}"
+        case .faTicket: return "\u{F145}"
+        case .faMinusSquare: return "\u{F146}"
+        case .faMinusSquareOutlined: return "\u{F147}"
+        case .faLevelUp: return "\u{F148}"
+        case .faLevelDown: return "\u{F149}"
+        case .faCheckSquare: return "\u{F14A}"
+        case .faPencilSquare: return "\u{F14B}"
+        case .faExternalLinkSquare: return "\u{F14C}"
+        case .faShareSquare: return "\u{F14D}"
+        case .faCompass: return "\u{F14E}"
+        case .faCaretSquareOutlinedDown: return "\u{F150}"
+        case .faCaretSquareOutlinedUp: return "\u{F151}"
+        case .faCaretSquareOutlinedRight: return "\u{F152}"
+        case .faEur: return "\u{F153}"
+        case .faGbp: return "\u{F154}"
+        case .faUsd: return "\u{F155}"
+        case .faInr: return "\u{F156}"
+        case .faJpy: return "\u{F157}"
+        case .faRub: return "\u{F158}"
+        case .faKrw: return "\u{F159}"
+        case .faBtc: return "\u{F15A}"
+        case .faFile: return "\u{F15B}"
+        case .faFileText: return "\u{F15C}"
+        case .faSortAlphaAsc: return "\u{F15D}"
+        case .faSortAlphaDesc: return "\u{F15E}"
+        case .faSortAmountAsc: return "\u{F160}"
+        case .faSortAmountDesc: return "\u{F161}"
+        case .faSortNumericAsc: return "\u{F162}"
+        case .faSortNumericDesc: return "\u{F163}"
+        case .faThumbsUp: return "\u{F164}"
+        case .faThumbsDown: return "\u{F165}"
+        case .faYoutubeSquare: return "\u{F166}"
+        case .faYoutube: return "\u{F167}"
+        case .faXing: return "\u{F168}"
+        case .faXingSquare: return "\u{F169}"
+        case .faYoutubePlay: return "\u{F16A}"
+        case .faDropbox: return "\u{F16B}"
+        case .faStackOverflow: return "\u{F16C}"
+        case .faInstagram: return "\u{F16D}"
+        case .faFlickr: return "\u{F16E}"
+        case .faAdn: return "\u{F170}"
+        case .faBitbucket: return "\u{F171}"
+        case .faBitbucketSquare: return "\u{F172}"
+        case .faTumblr: return "\u{F173}"
+        case .faTumblrSquare: return "\u{F174}"
+        case .faLongArrowDown: return "\u{F175}"
+        case .faLongArrowUp: return "\u{F176}"
+        case .faLongArrowLeft: return "\u{F177}"
+        case .faLongArrowRight: return "\u{F178}"
+        case .faApple: return "\u{F179}"
+        case .faWindows: return "\u{F17A}"
+        case .faAndroid: return "\u{F17B}"
+        case .faLinux: return "\u{F17C}"
+        case .faDribbble: return "\u{F17D}"
+        case .faSkype: return "\u{F17E}"
+        case .faFoursquare: return "\u{F180}"
+        case .faTrello: return "\u{F181}"
+        case .faFemale: return "\u{F182}"
+        case .faMale: return "\u{F183}"
+        case .faGratipay: return "\u{F184}"
+        case .faSunOutlined: return "\u{F185}"
+        case .faMoonOutlined: return "\u{F186}"
+        case .faArchive: return "\u{F187}"
+        case .faBug: return "\u{F188}"
+        case .faVk: return "\u{F189}"
+        case .faWeibo: return "\u{F18A}"
+        case .faRenren: return "\u{F18B}"
+        case .faPagelines: return "\u{F18C}"
+        case .faStackExchange: return "\u{F18D}"
+        case .faArrowCircleOutlinedRight: return "\u{F18E}"
+        case .faArrowCircleOutlinedLeft: return "\u{F190}"
+        case .faCaretSquareOutlinedLeft: return "\u{F191}"
+        case .faDotCircleOutlined: return "\u{F192}"
+        case .faWheelchair: return "\u{F193}"
+        case .faVimeoSquare: return "\u{F194}"
+        case .faTry: return "\u{F195}"
+        case .faPlusSquareOutlined: return "\u{F196}"
+        case .faSpaceShuttle: return "\u{F197}"
+        case .faSlack: return "\u{F198}"
+        case .faEnvelopeSquare: return "\u{F199}"
+        case .faWordpress: return "\u{F19A}"
+        case .faOpenid: return "\u{F19B}"
+        case .faUniversity: return "\u{F19C}"
+        case .faGraduationCap: return "\u{F19D}"
+        case .faYahoo: return "\u{F19E}"
+        case .faGoogle: return "\u{F1A0}"
+        case .faReddit: return "\u{F1A1}"
+        case .faRedditSquare: return "\u{F1A2}"
+        case .faStumbleuponCircle: return "\u{F1A3}"
+        case .faStumbleupon: return "\u{F1A4}"
+        case .faDelicious: return "\u{F1A5}"
+        case .faDigg: return "\u{F1A6}"
+        case .faPiedPiperPp: return "\u{F1A7}"
+        case .faPiedPiperAlt: return "\u{F1A8}"
+        case .faDrupal: return "\u{F1A9}"
+        case .faJoomla: return "\u{F1Aa}"
+        case .faLanguage: return "\u{F1Ab}"
+        case .faFax: return "\u{F1Ac}"
+        case .faBuilding: return "\u{F1Ad}"
+        case .faChild: return "\u{F1Ae}"
+        case .faPaw: return "\u{F1B0}"
+        case .faSpoon: return "\u{F1B1}"
+        case .faCube: return "\u{F1B2}"
+        case .faCubes: return "\u{F1B3}"
+        case .faBehance: return "\u{F1B4}"
+        case .faBehanceSquare: return "\u{F1B5}"
+        case .faSteam: return "\u{F1B6}"
+        case .faSteamSquare: return "\u{F1B7}"
+        case .faRecycle: return "\u{F1B8}"
+        case .faCar: return "\u{F1B9}"
+        case .faTaxi: return "\u{F1Ba}"
+        case .faTree: return "\u{F1Bb}"
+        case .faSpotify: return "\u{F1Bc}"
+        case .faDeviantart: return "\u{F1Bd}"
+        case .faSoundcloud: return "\u{F1Be}"
+        case .faDatabase: return "\u{F1C0}"
+        case .faFilePdfOutlined: return "\u{F1C1}"
+        case .faFileWordOutlined: return "\u{F1C2}"
+        case .faFileExcelOutlined: return "\u{F1C3}"
+        case .faFilePowerpointOutlined: return "\u{F1C4}"
+        case .faFileImageOutlined: return "\u{F1C5}"
+        case .faFileArchiveOutlined: return "\u{F1C6}"
+        case .faFileAudioOutlined: return "\u{F1C7}"
+        case .faFileVideoOutlined: return "\u{F1C8}"
+        case .faFileCodeOutlined: return "\u{F1C9}"
+        case .faVine: return "\u{F1Ca}"
+        case .faCodepen: return "\u{F1Cb}"
+        case .faJsfiddle: return "\u{F1Cc}"
+        case .faLifeRing: return "\u{F1Cd}"
+        case .faCircleOutlinedNotch: return "\u{F1Ce}"
+        case .faRebel: return "\u{F1D0}"
+        case .faEmpire: return "\u{F1D1}"
+        case .faGitSquare: return "\u{F1D2}"
+        case .faGit: return "\u{F1D3}"
+        case .faHackerNews: return "\u{F1D4}"
+        case .faTencentWeibo: return "\u{F1D5}"
+        case .faQq: return "\u{F1D6}"
+        case .faWeixin: return "\u{F1D7}"
+        case .faPaperPlane: return "\u{F1D8}"
+        case .faPaperPlaneOutlined: return "\u{F1D9}"
+        case .faHistory: return "\u{F1Da}"
+        case .faCircleThin: return "\u{F1Db}"
+        case .faHeader: return "\u{F1Dc}"
+        case .faParagraph: return "\u{F1Dd}"
+        case .faSliders: return "\u{F1De}"
+        case .faShareAlt: return "\u{F1E0}"
+        case .faShareAltSquare: return "\u{F1E1}"
+        case .faBomb: return "\u{F1E2}"
+        case .faFutbolOutlined: return "\u{F1E3}"
+        case .faTty: return "\u{F1E4}"
+        case .faBinoculars: return "\u{F1E5}"
+        case .faPlug: return "\u{F1E6}"
+        case .faSlideshare: return "\u{F1E7}"
+        case .faTwitch: return "\u{F1E8}"
+        case .faYelp: return "\u{F1E9}"
+        case .faNewspaperOutlined: return "\u{F1Ea}"
+        case .faWifi: return "\u{F1Eb}"
+        case .faCalculator: return "\u{F1Ec}"
+        case .faPaypal: return "\u{F1Ed}"
+        case .faGoogleWallet: return "\u{F1Ee}"
+        case .faCcVisa: return "\u{F1F0}"
+        case .faCcMastercard: return "\u{F1F1}"
+        case .faCcDiscover: return "\u{F1F2}"
+        case .faCcAmex: return "\u{F1F3}"
+        case .faCcPaypal: return "\u{F1F4}"
+        case .faCcStripe: return "\u{F1F5}"
+        case .faBellSlash: return "\u{F1F6}"
+        case .faBellSlashOutlined: return "\u{F1F7}"
+        case .faTrash: return "\u{F1F8}"
+        case .faCopyright: return "\u{F1F9}"
+        case .faAt: return "\u{F1Fa}"
+        case .faEyedropper: return "\u{F1Fb}"
+        case .faPaintBrush: return "\u{F1Fc}"
+        case .faBirthdayCake: return "\u{F1Fd}"
+        case .faAreaChart: return "\u{F1Fe}"
+        case .faPieChart: return "\u{F200}"
+        case .faLineChart: return "\u{F201}"
+        case .faLastfm: return "\u{F202}"
+        case .faLastfmSquare: return "\u{F203}"
+        case .faToggleOff: return "\u{F204}"
+        case .faToggleOn: return "\u{F205}"
+        case .faBicycle: return "\u{F206}"
+        case .faBus: return "\u{F207}"
+        case .faIoxhost: return "\u{F208}"
+        case .faAngellist: return "\u{F209}"
+        case .faCc: return "\u{F20A}"
+        case .faIls: return "\u{F20B}"
+        case .faMeanpath: return "\u{F20C}"
+        case .faBuysellads: return "\u{F20D}"
+        case .faConnectdevelop: return "\u{F20E}"
+        case .faDashcube: return "\u{F210}"
+        case .faForumbee: return "\u{F211}"
+        case .faLeanpub: return "\u{F212}"
+        case .faSellsy: return "\u{F213}"
+        case .faShirtsinbulk: return "\u{F214}"
+        case .faSimplybuilt: return "\u{F215}"
+        case .faSkyatlas: return "\u{F216}"
+        case .faCartPlus: return "\u{F217}"
+        case .faCartArrowDown: return "\u{F218}"
+        case .faDiamond: return "\u{F219}"
+        case .faShip: return "\u{F21A}"
+        case .faUserSecret: return "\u{F21B}"
+        case .faMotorcycle: return "\u{F21C}"
+        case .faStreetView: return "\u{F21D}"
+        case .faHeartbeat: return "\u{F21E}"
+        case .faVenus: return "\u{F221}"
+        case .faMars: return "\u{F222}"
+        case .faMercury: return "\u{F223}"
+        case .faTransgender: return "\u{F224}"
+        case .faTransgenderAlt: return "\u{F225}"
+        case .faVenusDouble: return "\u{F226}"
+        case .faMarsDouble: return "\u{F227}"
+        case .faVenusMars: return "\u{F228}"
+        case .faMarsStroke: return "\u{F229}"
+        case .faMarsStrokeV: return "\u{F22A}"
+        case .faMarsStrokeH: return "\u{F22B}"
+        case .faNeuter: return "\u{F22C}"
+        case .faGenderless: return "\u{F22D}"
+        case .faFacebookOfficial: return "\u{F230}"
+        case .faPinterestP: return "\u{F231}"
+        case .faWhatsapp: return "\u{F232}"
+        case .faServer: return "\u{F233}"
+        case .faUserPlus: return "\u{F234}"
+        case .faUserTimes: return "\u{F235}"
+        case .faBed: return "\u{F236}"
+        case .faViacoin: return "\u{F237}"
+        case .faTrain: return "\u{F238}"
+        case .faSubway: return "\u{F239}"
+        case .faMedium: return "\u{F23A}"
+        case .faYCombinator: return "\u{F23B}"
+        case .faOptinMonster: return "\u{F23C}"
+        case .faOpencart: return "\u{F23D}"
+        case .faExpeditedssl: return "\u{F23E}"
+        case .faBatteryFull: return "\u{F240}"
+        case .faBatteryThreeQuarters: return "\u{F241}"
+        case .faBatteryHalf: return "\u{F242}"
+        case .faBatteryQuarter: return "\u{F243}"
+        case .faBatteryEmpty: return "\u{F244}"
+        case .faMousePointer: return "\u{F245}"
+        case .faICursor: return "\u{F246}"
+        case .faObjectGroup: return "\u{F247}"
+        case .faObjectUngroup: return "\u{F248}"
+        case .faStickyNote: return "\u{F249}"
+        case .faStickyNoteOutlined: return "\u{F24A}"
+        case .faCcJcb: return "\u{F24B}"
+        case .faCcDinersClub: return "\u{F24C}"
+        case .faClone: return "\u{F24D}"
+        case .faBalanceScale: return "\u{F24E}"
+        case .faHourglassOutlined: return "\u{F250}"
+        case .faHourglassStart: return "\u{F251}"
+        case .faHourglassHalf: return "\u{F252}"
+        case .faHourglassEnd: return "\u{F253}"
+        case .faHourglass: return "\u{F254}"
+        case .faHandRockOutlined: return "\u{F255}"
+        case .faHandPaperOutlined: return "\u{F256}"
+        case .faHandScissorsOutlined: return "\u{F257}"
+        case .faHandLizardOutlined: return "\u{F258}"
+        case .faHandSpockOutlined: return "\u{F259}"
+        case .faHandPointerOutlined: return "\u{F25A}"
+        case .faHandPeaceOutlined: return "\u{F25B}"
+        case .faTrademark: return "\u{F25C}"
+        case .faRegistered: return "\u{F25D}"
+        case .faCreativeCommons: return "\u{F25E}"
+        case .faGg: return "\u{F260}"
+        case .faGgCircle: return "\u{F261}"
+        case .faTripadvisor: return "\u{F262}"
+        case .faOdnoklassniki: return "\u{F263}"
+        case .faOdnoklassnikiSquare: return "\u{F264}"
+        case .faGetPocket: return "\u{F265}"
+        case .faWikipediaW: return "\u{F266}"
+        case .faSafari: return "\u{F267}"
+        case .faChrome: return "\u{F268}"
+        case .faFirefox: return "\u{F269}"
+        case .faOpera: return "\u{F26A}"
+        case .faInternetExplorer: return "\u{F26B}"
+        case .faTelevision: return "\u{F26C}"
+        case .faContao: return "\u{F26D}"
+        case .fa500px: return "\u{F26E}"
+        case .faAmazon: return "\u{F270}"
+        case .faCalendarPlusOutlined: return "\u{F271}"
+        case .faCalendarMinusOutlined: return "\u{F272}"
+        case .faCalendarTimesOutlined: return "\u{F273}"
+        case .faCalendarCheckOutlined: return "\u{F274}"
+        case .faIndustry: return "\u{F275}"
+        case .faMapPin: return "\u{F276}"
+        case .faMapSigns: return "\u{F277}"
+        case .faMapOutlined: return "\u{F278}"
+        case .faMap: return "\u{F279}"
+        case .faCommenting: return "\u{F27A}"
+        case .faCommentingOutlined: return "\u{F27B}"
+        case .faHouzz: return "\u{F27C}"
+        case .faVimeo: return "\u{F27D}"
+        case .faBlackTie: return "\u{F27E}"
+        case .faFonticons: return "\u{F280}"
+        case .faRedditAlien: return "\u{F281}"
+        case .faEdge: return "\u{F282}"
+        case .faCreditCardAlt: return "\u{F283}"
+        case .faCodiepie: return "\u{F284}"
+        case .faModx: return "\u{F285}"
+        case .faFortAwesome: return "\u{F286}"
+        case .faUsb: return "\u{F287}"
+        case .faProductHunt: return "\u{F288}"
+        case .faMixcloud: return "\u{F289}"
+        case .faScribd: return "\u{F28A}"
+        case .faPauseCircle: return "\u{F28B}"
+        case .faPauseCircleOutlined: return "\u{F28C}"
+        case .faStopCircle: return "\u{F28D}"
+        case .faStopCircleOutlined: return "\u{F28E}"
+        case .faShoppingBag: return "\u{F290}"
+        case .faShoppingBasket: return "\u{F291}"
+        case .faHashtag: return "\u{F292}"
+        case .faBluetooth: return "\u{F293}"
+        case .faBluetoothB: return "\u{F294}"
+        case .faPercent: return "\u{F295}"
+        case .faGitlab: return "\u{F296}"
+        case .faWpbeginner: return "\u{F297}"
+        case .faWpforms: return "\u{F298}"
+        case .faEnvira: return "\u{F299}"
+        case .faUniversalAccess: return "\u{F29A}"
+        case .faWheelchairAlt: return "\u{F29B}"
+        case .faQuestionCircleOutlined: return "\u{F29C}"
+        case .faBlind: return "\u{F29D}"
+        case .faAudioDescription: return "\u{F29E}"
+        case .faVolumeControlPhone: return "\u{F2A0}"
+        case .faBraille: return "\u{F2A1}"
+        case .faAssistiveListeningSystems: return "\u{F2A2}"
+        case .faAmericanSignLanguageInterpreting: return "\u{F2A3}"
+        case .faDeaf: return "\u{F2A4}"
+        case .faGlide: return "\u{F2A5}"
+        case .faGlideG: return "\u{F2A6}"
+        case .faSignLanguage: return "\u{F2A7}"
+        case .faLowVision: return "\u{F2A8}"
+        case .faViadeo: return "\u{F2A9}"
+        case .faViadeoSquare: return "\u{F2Aa}"
+        case .faSnapchat: return "\u{F2Ab}"
+        case .faSnapchatGhost: return "\u{F2Ac}"
+        case .faSnapchatSquare: return "\u{F2Ad}"
+        case .faPiedPiper: return "\u{F2Ae}"
+        case .faFirstOrder: return "\u{F2B0}"
+        case .faYoast: return "\u{F2B1}"
+        case .faThemeisle: return "\u{F2B2}"
+        case .faGooglePlusOfficial: return "\u{F2B3}"
+        case .faFontAwesome: return "\u{F2B4}"
         }
-        return String(UnicodeScalar(value))
     }
 }

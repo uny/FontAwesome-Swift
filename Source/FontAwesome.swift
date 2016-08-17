@@ -118,7 +118,7 @@ private final class FontLoader {
         let fontURL = bundle.url(forResource: name, withExtension: ext)!
         let data = try! Data(contentsOf: fontURL)
         
-        let provider = CGDataProvider(data: data)!
+        let provider = CGDataProvider(data: data as CFData)!
         let font = CGFont(provider)
         
         var error: Unmanaged<CFError>?

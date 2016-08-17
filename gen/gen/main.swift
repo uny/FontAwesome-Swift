@@ -46,13 +46,11 @@ func main() {
         "",
         "    /// Unicode string.",
         "    var unicode: String {",
-        "        let value: UInt32",
         "        switch self {"
     ]
-    lines += icons.map { "        case .\($0.name): value = 0x\($0.unicode.capitalizedString)" }
+    lines += icons.map { "        case .\($0.name): return \"\\u{\($0.unicode.capitalizedString)}\"" }
     lines += [
         "        }",
-        "        return String(UnicodeScalar(value))",
         "    }",
         "}",
         ""
